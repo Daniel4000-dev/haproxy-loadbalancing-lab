@@ -3,6 +3,8 @@
 
 From my local machine i did:
 ```bash
-curl http://192.168.0.12 `(HAProxy-public-IP)`
+curl http://54.155.121.154`(HAProxy-public-IP)`
+
+![Local machine to HAProxy](./screenshots//local_machine_2_haproxy.png)
 
 

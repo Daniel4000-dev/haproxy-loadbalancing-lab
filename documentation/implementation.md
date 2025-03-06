@@ -192,7 +192,7 @@ sudo apt install haproxy -y
 ```bash
 sudo nano /etc/haproxy/haproxy.cfg
 ```
-replace the file with this content
+replaced the file with this content (more like made sure the original script contained these files)
 
 ```cfg
 global
@@ -215,4 +215,10 @@ backend web_servers
     balance roundrobin
     server web1 192.168.0.10:80 check
     server web2 192.168.0.11:80 check
+```
+
+then i ran
+
+```bash
+sudo systemctl restart haproxy
 ```
