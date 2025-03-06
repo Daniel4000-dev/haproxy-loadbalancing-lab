@@ -146,6 +146,8 @@ vagrant status
 - **Web2:** `192.168.0.11`
 - **HAProxy:** `192.168.0.12`
 
+![Server Running](./screenshots//servers_runnning.png)
+
 ## SSH into EC2 Instances
 To access the instances:
 
