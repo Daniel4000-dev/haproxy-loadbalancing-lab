@@ -222,3 +222,11 @@ then i ran
 ```bash
 sudo systemctl restart haproxy
 ```
+
+### Moved HAProxy config into /configs
+
+moved the HAProxy config to project folder by executing the command:
+
+```bash
+scp -i web1-key-pair.pem ubuntu@54.155.121.154:/etc/haproxy/haproxy.cfg configs/
+```
