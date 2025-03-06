@@ -214,12 +214,3 @@ backend web_servers
     server web1 192.168.0.10:80 check
     server web2 192.168.0.11:80 check
 ```
-
-## **Test Load Balancing**
-
-From my local machine i did:
-```bash
-curl http://192.168.0.12 `(HAProxy-public-IP)`
-
-
-
