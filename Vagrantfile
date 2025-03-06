@@ -15,7 +15,8 @@ Vagrant.configure("2") do |config|
 
     # Web Server 1
     config.vm.define "web1" do |web1|
-      web1.vm.box = "cloud-image/ubuntu-22.04"
+      web1.vm.box = "bento/ubuntu-24.04"
+      web1.vm.box_version = "0.0.1"
       web1.vm.hostname = "web1"
       web1.vm.network "private_network", ip: "192.168.64.10"
       web1.vm.provision "shell", inline: <<-SHELL
@@ -29,7 +30,8 @@ Vagrant.configure("2") do |config|
 
     # Web Server 2
     config.vm.define "web2" do |web2|
-      web2.vm.box = "cloud-image/ubuntu-22.04"
+      web2.vm.box = "bento/ubuntu-24.04"
+      web2.vm.box_version = "0.0.1"
       web2.vm.hostname = "web2"
       web2.vm.network "private_network", ip: "192.168.64.11"
       web2.vm.provision "shell", inline: <<-SHELL
@@ -43,7 +45,8 @@ Vagrant.configure("2") do |config|
 
     # HAProxy Load Balancer
     config.vm.define "haproxy" do |haproxy|
-      haproxy.vm.box = "cloud-image/ubuntu-22.04"
+      haproxy.vm.box = "bento/ubuntu-24.04"
+      haproxy.vm.box_version = "0.0.1"
       haproxy.vm.hostname = "haproxy"
       haproxy.vm.network "private_network", ip: "192.168.64.12"
       haproxy.vm.provision "shell", inline: <<-SHELL
